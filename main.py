@@ -1,27 +1,17 @@
-student_dict = {
-    "student": ["Angela", "James", "Lily"], 
-    "score": [56, 76, 98]
-}
+from utils import clear_console
+from converter import NATO
 
-#Looping through dictionaries:
-for (key, value) in student_dict.items():
-    #Access key and value
-    pass
 
-import pandas
-student_data_frame = pandas.DataFrame(student_dict)
+def main() -> None:
+    clear_console()
+    converter = NATO()
 
-#Loop through rows of a data frame
-for (index, row) in student_data_frame.iterrows():
-    #Access index and row
-    #Access row.student or row.score
-    pass
+    data = input("Enter a word: ")
+    converted_words = converter.convert(data)
+    print("-" * 40)
+    for word in converted_words:
+        print(" ".join(word))
 
-# Keyword Method with iterrows()
-# {new_key:new_value for (index, row) in df.iterrows()}
 
-#TODO 1. Create a dictionary in this format:
-{"A": "Alfa", "B": "Bravo"}
-
-#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
-
+if __name__ == "__main__":
+    main()
