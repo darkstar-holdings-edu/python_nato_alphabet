@@ -1,4 +1,4 @@
-# USA State Naming Game
+# NATO Phonetic Alphabet Converter
 
 This is repo contains code that I generate while working on the [100 Days of Code](https://www.udemy.com/course/100-days-of-code/) udemy course for learning Python.
 
